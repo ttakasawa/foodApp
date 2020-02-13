@@ -20,6 +20,7 @@
 		B2FFDFDB23F4B49B0039EE3C /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDA23F4B49B0039EE3C /* UserNetwork.swift */; };
 		B2FFDFDE23F4B56D0039EE3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDD23F4B56D0039EE3C /* User.swift */; };
 		B2FFDFE023F507000039EE3C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDF23F507000039EE3C /* Card.swift */; };
+		B2FFDFE223F52B190039EE3C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B2FFDFE123F52B190039EE3C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B2FFDFDA23F4B49B0039EE3C /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
 		B2FFDFDD23F4B56D0039EE3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2FFDFDF23F507000039EE3C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B2FFDFE123F52B190039EE3C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				B2FFDFBC23F4771E0039EE3C /* TenderTests */,
 				B2FFDFC723F4771E0039EE3C /* TenderUITests */,
 				B2FFDFA123F4771B0039EE3C /* Products */,
+				B2FFDFE123F52B190039EE3C /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +284,7 @@
 			files = (
 				B2FFDFB323F4771E0039EE3C /* LaunchScreen.storyboard in Resources */,
 				B2FFDFB023F4771E0039EE3C /* Preview Assets.xcassets in Resources */,
+				B2FFDFE223F52B190039EE3C /* Podfile in Resources */,
 				B2FFDFAD23F4771E0039EE3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
