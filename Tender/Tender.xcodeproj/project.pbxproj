@@ -16,6 +16,10 @@
 		B2FFDFB323F4771E0039EE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FFDFB123F4771E0039EE3C /* LaunchScreen.storyboard */; };
 		B2FFDFBE23F4771E0039EE3C /* TenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFBD23F4771E0039EE3C /* TenderTests.swift */; };
 		B2FFDFC923F4771E0039EE3C /* TenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFC823F4771E0039EE3C /* TenderUITests.swift */; };
+		B2FFDFD723F4906F0039EE3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFD623F4906F0039EE3C /* HomeViewController.swift */; };
+		B2FFDFDB23F4B49B0039EE3C /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDA23F4B49B0039EE3C /* UserNetwork.swift */; };
+		B2FFDFDE23F4B56D0039EE3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDD23F4B56D0039EE3C /* User.swift */; };
+		B2FFDFE023F507000039EE3C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FFDFDF23F507000039EE3C /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		B2FFDFC423F4771E0039EE3C /* TenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FFDFC823F4771E0039EE3C /* TenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenderUITests.swift; sourceTree = "<group>"; };
 		B2FFDFCA23F4771E0039EE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FFDFD623F4906F0039EE3C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B2FFDFDA23F4B49B0039EE3C /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
+		B2FFDFDD23F4B56D0039EE3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2FFDFDF23F507000039EE3C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,9 @@
 		B2FFDFA223F4771B0039EE3C /* Tender */ = {
 			isa = PBXGroup;
 			children = (
+				B2FFDFDC23F4B53F0039EE3C /* Models */,
+				B2FFDFD923F4B4820039EE3C /* Network */,
+				B2FFDFD823F49F110039EE3C /* ViewControllers */,
 				B2FFDFA323F4771B0039EE3C /* AppDelegate.swift */,
 				B2FFDFA523F4771B0039EE3C /* SceneDelegate.swift */,
 				B2FFDFAA23F4771B0039EE3C /* ContentView.swift */,
@@ -137,6 +148,31 @@
 				B2FFDFCA23F4771E0039EE3C /* Info.plist */,
 			);
 			path = TenderUITests;
+			sourceTree = "<group>";
+		};
+		B2FFDFD823F49F110039EE3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2FFDFD623F4906F0039EE3C /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2FFDFD923F4B4820039EE3C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2FFDFDA23F4B49B0039EE3C /* UserNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B2FFDFDC23F4B53F0039EE3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2FFDFDD23F4B56D0039EE3C /* User.swift */,
+				B2FFDFDF23F507000039EE3C /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FFDFD723F4906F0039EE3C /* HomeViewController.swift in Sources */,
 				B2FFDFA423F4771B0039EE3C /* AppDelegate.swift in Sources */,
 				B2FFDFA923F4771B0039EE3C /* Tender.xcdatamodeld in Sources */,
+				B2FFDFDB23F4B49B0039EE3C /* UserNetwork.swift in Sources */,
 				B2FFDFAB23F4771B0039EE3C /* ContentView.swift in Sources */,
 				B2FFDFA623F4771B0039EE3C /* SceneDelegate.swift in Sources */,
+				B2FFDFDE23F4B56D0039EE3C /* User.swift in Sources */,
+				B2FFDFE023F507000039EE3C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomokitakasawa.Tender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,7 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomokitakasawa.Tender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
